@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор 2</title>
+    <script src="/static/script2.js" defer></script>
+</head>
+<body>
+    <h1>Задані параметри:</h1>
+    <form id="calcForm">
+        <input 
+          type="text" 
+          name="Hr" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Hr (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Cr" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Cr (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Sr" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Sr (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Or" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Or (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Vr" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Vr (мг/кг)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Wr" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Wr (%)"
+        ><br>
+
+        <input
+          type="text" 
+          name="Ar" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Ar (%)"
+        ><br>
+
+        <input
+          type="text" 
+          name="Qdafi" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Qdafi (мДж/кг)"
+        ><br>
+
+        <button type="submit">Розрахувати</button>
+    </form>
+    <h2>Склад мазуту:</h2>
+    <div id="result"></div>
+</body>
+</html>

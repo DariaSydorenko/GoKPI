@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор 1</title>
+    <script src="/static/script1.js" defer></script>
+</head>
+<body>
+    <h1>Заданий склад компонентів палива:</h1>
+    <form id="calcForm">
+        <input 
+          type="text" 
+          name="Hp" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Hp (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Cp" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Cp (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Sp"
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Sp (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Np" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Np (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Op" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Op (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Wp"
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Wp (%)"
+        ><br>
+
+        <input 
+          type="text" 
+          name="Ap" 
+          style="margin-bottom: 5px;" 
+          required 
+          placeholder="Ap (%)"
+        ><br>
+
+        <button type="submit">Розрахувати</button>
+    </form>
+
+    <h2>Результат:</h2>
+    <div id="result"></div>
+</body>
+</html>
