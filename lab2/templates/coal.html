@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор викидів для вугілля</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Калькулятор викидів для вугілля</h1>
+    <form method="POST" onsubmit="saveInputValue()">
+        <label for="mass">Маса вугілля (т):</label>
+        <input type="text" id="mass" name="mass" required><br><br>
+        <input type="submit" value="Розрахувати">
+    </form>
+
+    {{if .Emission}}
+    <p>Показник емісії: {{.Emission}} г/ГДж</p>
+    <p>Валовий викид: {{.GrossEmission}} т.</p>
+    {{end}}
+
+    <a href="/">Назад в меню</a>
+</body>
+</html>

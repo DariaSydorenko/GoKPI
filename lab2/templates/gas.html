@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Калькулятор викидів для газу</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <h1>Калькулятор викидів для газу</h1>
+    <form method="POST">
+      <label for="mass"
+        >Об'єм природного газу із газопроводу Уренгой-Ужгород (m3):</label
+      >
+      <input type="text" id="mass" name="mass" required/><br /><br />
+      <input type="submit" value="Розрахувати" />
+    </form>
+    {{if .}}
+    <p>Показник емісії: {{.Emission}} г/ГДж</p>
+    <p>Валовий викид: {{.GrossEmission}} т.</p>
+    {{end}}
+    <a href="/">Назад в меню</a>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Калькулятор викидів для мазуту</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <h1>Калькулятор викидів для мазуту</h1>
+    <form method="POST">
+      <label for="mass">Маса високосірчастого мазуту марки 40 (т):</label>
+      <input type="text" id="mass" name="mass" required/><br /><br />
+      <input type="submit" value="Розрахувати" />
+    </form>
+    {{if .}}
+    <p>Показник емісії: {{.Emission}} г/ГДж</p>
+    <p>Валовий викид: {{.GrossEmission}} т.</p>
+    {{end}}
+    <a href="/">Назад в меню</a>
+  </body>
+</html>
